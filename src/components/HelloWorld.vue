@@ -1,6 +1,6 @@
 <template>
   <div class="index-wrap">
-    <h1 class="header">淘宝优惠券5</h1>
+    <h1 class="header">淘宝优惠券6</h1>
     <div class="index-main">
       <ul class="goods-list">
         <li class gtype="1" id="584511133190" g_type="1" re>

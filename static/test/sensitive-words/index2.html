@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>测试pdf2</title>
+		<link rel="stylesheet" href="./plugin/pdfjs/web/viewer.css">
+
+	<!-- This snippet is used in production (included from viewer.html) -->
+	<link rel="resource" type="application/l10n" href="./plugin/pdfjs/web/locale/locale.properties">
+	<script src="./plugin/pdfjs/build/pdf.js"></script>
+	<script type="text/javascript">
+         console.log(pdfjsLib);
+     </script>
+
+	</head>
+	<body>
+		<h1><a href="javascript:void(0)" target="_blank" onclick="showPdf()">显示pdf文档</a></h1>
+		<div id="container" style="display: none;">
+        <div class="lightbox"></div>
+         <div id="pop" class="pop">
+             <canvas id="the-canvas"></canvas>
+         </div>
+     </div>
+		
+	</body>
+</html>

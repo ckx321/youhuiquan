@@ -318,8 +318,9 @@
       <!--敏感词列表弹窗开始-->
       <div id="sensitive-words-layer" class="sensitive-words-wrap" style="display: none;">
         <h3 class="sensitive-words-title">当前第<span id="sensitive-words-pagenum"></span>页，本页包含敏感词：<span id="sensitive-words-close-btn"
-            class="sensitive-words-close-btn">关闭</span><span class="sensitive-words-print-btn">打印</span></h3>
+            class="sensitive-words-close-btn">关闭</span><span id="sensitive-words-print-btn" class="sensitive-words-print-btn">打印</span></h3>
         <div class="sensitive-words-cont">
+          <!--startprint-->
           <div id="sensitive-words-layer-main" class="sensitive-words-main">
             <ol class="sensitive-words-list">
               <li class="sensitive-words-item">
@@ -332,6 +333,7 @@
             </ol>
             <div class="sensitive-words-empty">无</div>
           </div>
+          <!--endprint-->
         </div>
       </div>
       <!--敏感词列表弹窗结束-->

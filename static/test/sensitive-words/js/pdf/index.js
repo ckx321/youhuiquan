@@ -109,6 +109,19 @@ $(function () {
   }
 
   /**
+   * 打印
+   **/
+  var doPrint = function () {
+    bdhtml = window.document.body.innerHTML;
+    sprnstr = "<!--startprint-->";
+    eprnstr = "<!--endprint-->";
+    prnhtml = bdhtml.substr(bdhtml.indexOf(sprnstr) + 17);
+    prnhtml = prnhtml.substring(0, prnhtml.indexOf(eprnstr));
+    window.document.body.innerHTML = prnhtml;
+    window.print();
+  }
+
+  /**
    * 定义高亮当前页所有敏感词
    * @param pn {Number} 当前页码
    **/
@@ -174,4 +187,11 @@ $(function () {
     $sensitiveWordsLayer.hide();
     sensitiveWordsLayerIsShow = false;
   })
+
+  /**
+   * 打印事件绑定
+   **/
+  // $('#sensitive-words-print-btn').on('click', function () {
+  //   doPrint();
+  // })
 })
